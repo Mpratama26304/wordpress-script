@@ -240,7 +240,7 @@ echo "ssl installed";
 }
 
 while true; do
-    options=("Checking your OS" "install for ubuntu 22.04 and above" "install for other debain based OS")
+    options=("Checking your OS" "install for ubuntu 22.04 and above" "install self sigend ssl")
 
     echo "Choose an option:"
     select opt in "${options[@]}"; do
@@ -252,7 +252,7 @@ while true; do
         esac
     done
 
-    echo "Have you checked your OS Rlease?"
+    echo "Have you checked your OS Rlease && installed?"
     select opt in "No, break the installation" "Yes, go back to installation"; do
         case $REPLY in
             1) break 2 ;;
