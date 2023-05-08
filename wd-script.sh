@@ -50,7 +50,7 @@ cat > /etc/hosts << 'EOL'
 127.0.1.1		mpsiteweb.securityhub.id
 EOL
 cat > /etc/hostname << 'EOL'
-linuxsyr
+mpsiteweb
 EOL
 apt install apache2 mariadb-server -y
 sudo systemctl enable apache2
@@ -147,7 +147,7 @@ rotateCursor
 rotateCursor 10
 
 cat > /etc/apache2/sites-available/wordpress.conf << 'EOL'
-<VirtualHost *:21161>
+<VirtualHost *:80>
 
 ServerAdmin root@6bbb207983e8
 
